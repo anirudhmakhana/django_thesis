@@ -7,6 +7,7 @@ else
     sudo python3 -m venv env
 fi
 
+echo "$USER"
 echo $PWD
 source env/bin/activate
 
