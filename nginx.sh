@@ -15,3 +15,6 @@ sudo systemctl enable nginx
 echo "Nginx has been enabled."
 
 sudo systemctl status nginx
+
+sudo ufw delete allow 8000
+sudo ufw allow 'Nginx Full'
