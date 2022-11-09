@@ -7,7 +7,7 @@ After=network.target
 User=iter
 Group=www-data
 WorkingDirectory=/var/lib/jenkins/workspace/django-cicd/
-ExecStart=/var/lib/jenkins/workspace/django-cicd/env/bin/gunicorn \
+ExecStart=gunicorn \
           --error-logfile /var/lib/jenkins/workspace/django-cicd/error.log \
           --workers 3 \
           --capture-output --log-level debug \
