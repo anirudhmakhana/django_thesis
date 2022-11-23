@@ -1,12 +1,13 @@
-from .views import RegisterAPI
 from django.urls import path
-from knox import views as knox_views
-from .views import LoginAPI
 from django.urls import path
 
+from accounts.views import UserRegistrationView, UserLoginView, UserProfileView, UserChangePasswordView, SendPasswordResetEmailView, UserPasswordResetView
 urlpatterns = [
-    path('api/register/', RegisterAPI.as_view(), name='register'),
-    path('api/login/', LoginAPI.as_view(), name='login'),
-    path('api/logout/', knox_views.LogoutView.as_view(), name='logout'),
-    path('api/logoutall/', knox_views.LogoutAllView.as_view(), name='logoutall'),
+    path('register/', UserRegistrationView.as_view(), name='register'),
+    path('login/', UserLoginView.as_view(), name='login'),
+    path('profile/', UserProfileView.as_view(), name='profile'),
+    path('changepassword/', UserChangePasswordView.as_view(), name='changepassword'),
+    path('send-reset-password-email/', SendPasswordResetEmailView.as_view(), name='send-reset-password-email'),
+    # path('reset-password/<uid>/<token>/', UserPasswordResetView.as_view(), name='reset-password'),
+
 ]
