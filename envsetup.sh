@@ -13,9 +13,9 @@ echo $PWD
 
 if [[ "$VIRTUAL_ENV" != "" ]]
 then
-  INVENV=1
+  echo "working"
 else
-  INVENV=0
+  echo "not working"
 fi
 
 sudo pip3 install -r requirements.txt
