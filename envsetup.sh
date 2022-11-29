@@ -11,6 +11,12 @@ echo "$USER"
 echo $PWD
 . env/bin/activate
 
+if [[ "$VIRTUAL_ENV" != "" ]]
+then
+  INVENV=1
+else
+  INVENV=0
+fi
 
 sudo pip3 install -r requirements.txt
 
