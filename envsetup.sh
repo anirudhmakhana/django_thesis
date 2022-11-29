@@ -9,7 +9,7 @@ fi
 
 echo "$USER"
 echo $PWD
-source env/bin/activate
+. env/bin/activate
 
 
 sudo pip3 install -r requirements.txt
