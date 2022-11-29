@@ -38,4 +38,5 @@ __`❍ python manage.py runserver `__
 
 __`❍ http://127.0.0.1:8000/`__
 
+Find more about the API endpoints here: https://documenter.getpostman.com/view/20653856/2s8YsnWvyu
 __*Happy developing!*__

@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 sudo cp -rf app.conf /etc/nginx/conf.d
 chmod 705 /var/lib/jenkins/workspace/django-cicd
